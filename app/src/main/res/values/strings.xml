@@ -22,4 +22,9 @@
     <string name="desc_style">- Description: </string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="instructions">Instructions</string>
+    <string name="shoe_list">Shoe List</string>
+    <string name="shoe_details">Shoe Details</string>
+    <string name="content_desc_for_add_button">Add button for new shoe</string>
 </resources>

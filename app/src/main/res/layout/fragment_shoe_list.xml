@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <!-- Constraint layout as parent to freely adjust the views to a specific design
+     considering the floating button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!-- Scroll view so you can scroll if the list is bigger than the screen size -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".screens.ShoeListFragment">
 
+            <!-- Linear layout as child since all items of shoes will in vertical orientation -->
             <LinearLayout
                 android:id="@+id/linear_layout"
                 android:layout_width="match_parent"
@@ -26,10 +31,11 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_margin="12dp"
-            android:src="@drawable/ic_add" />
+            android:contentDescription="@string/content_desc_for_add_button"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

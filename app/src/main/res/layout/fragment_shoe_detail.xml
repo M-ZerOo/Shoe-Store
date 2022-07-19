@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <!-- Declare dataBinding for the shoe model -->
         <variable
             name="shoe"
             type="com.melfouly.shoestore.model.Shoe" />
     </data>
 
+    <!-- Constraint layout as parent to freely adjust the views to a specific design -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

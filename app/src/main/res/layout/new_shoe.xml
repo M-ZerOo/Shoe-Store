@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Linear layout as the parent since it's simple design which all view are under each other -->
     <LinearLayout
         android:id="@+id/shoe_layout"
         android:layout_width="match_parent"

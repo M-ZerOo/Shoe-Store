@@ -36,14 +36,12 @@ class ShoeDetailFragment : Fragment() {
         /**
          * Check for the edit texts if they are empty it will make a toast to help the user,
          * if not it will add the new shoe to the viewModel and navigate back to the ShoeListFragment
-          */
+         */
 
         binding.saveBtn.setOnClickListener {
             if (checkDetails()) {
                 viewModel.addNewShoe(shoe)
-                findNavController().navigate(
-                    ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment()
-                )
+                findNavController().navigateUp()
             } else Toast.makeText(activity, "Check shoe details.", Toast.LENGTH_SHORT).show()
         }
 

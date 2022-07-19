@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.melfouly.shoestore.screens.LoginFragment"
-        android:label="Login">
+        android:label="@string/login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.melfouly.shoestore.screens.WelcomeFragment"
-        android:label="Welcome">
+        android:label="@string/welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
             app:destination="@id/instructionsFragment"
@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.melfouly.shoestore.screens.InstructionsFragment"
-        android:label="Instructions"
+        android:label="@string/instructions"
         tools:layout="@layout/fragment_instructions">
         <action
             android:id="@+id/action_instructionsFragment_to_shoeListFragment"
@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.melfouly.shoestore.screens.ShoeListFragment"
-        android:label="Shoe List">
+        android:label="@string/shoe_list">
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetailFragment"
@@ -63,7 +63,7 @@
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.melfouly.shoestore.screens.ShoeDetailFragment"
-        android:label="Shoe Details">
+        android:label="@string/shoe_details">
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment"

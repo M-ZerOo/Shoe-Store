@@ -35,16 +35,17 @@ class ShoeListFragment : Fragment() {
                 val shoeBinding: NewShoeBinding =
                     DataBindingUtil.inflate(inflater, R.layout.new_shoe, null, false)
 
-                shoeBinding.shoeName.text = item.name
-                shoeBinding.shoeSize.text =
+                with(shoeBinding) {
+                shoeName.text = item.name
+                shoeSize.text =
                     resources.getString(R.string.size_style) + " " + item.size
-                shoeBinding.shoeCompany.text =
+                shoeCompany.text =
                     resources.getString(R.string.company_style) + " " + item.company
-                shoeBinding.shoeDesc.text =
+                shoeDesc.text =
                     resources.getString(R.string.desc_style) + " " + item.description
 
                 binding.linearLayout.addView(shoeBinding.root)
-            }
+            }}
         }
 
         binding.fab.setOnClickListener {
